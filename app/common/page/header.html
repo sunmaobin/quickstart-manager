@@ -1,0 +1,47 @@
+<nav class="navbar navbar-default navbar-static-top" ms-controller="nav">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="javascript:;">奈特管理后台</a>
+        </div>
+        <div ms-if="app.home" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#!/main/home">首页</a>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle"
+                       data-toggle="dropdown"
+                       role="button"
+                       aria-haspopup="true"
+                       aria-expanded="false">用户管理 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#!/user/list">用户列表</a></li>
+                        <li><a href="#!/user/create">新建用户</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#!/role/index">角色管理</a>
+                </li>
+                <li>
+                    <a href="#!/auth/index">权限管理</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle"
+                       data-toggle="dropdown"
+                       role="button"
+                       aria-haspopup="true"
+                       aria-expanded="false">{{app.user.userName}} <span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="btn-nav">
+                        <li><a href="javascript:;" data-action="info">个人资料</a></li>
+                        <li><a href="javascript:;" data-action="passwd">修改密码</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="javascript:;" data-action="logout">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

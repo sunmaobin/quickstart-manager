@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>奈特科技后台</title>
+    <title>登录 - 奈特科技后台</title>
     <link rel="shortcut icon" href="favicon.ico">
 
     <script>
@@ -12,8 +12,8 @@
          * 后台的token应该是存储在session中的，一般是30分钟，如果失效则前端的ajax请求处需要处理重定向到login页面。
          */
         var token = localStorage.getItem('gd_data_token');
-        if(!token){
-            location.href = "./login.html";
+        if(token){
+            location.href = "./";
         };
     </script>
 
@@ -25,7 +25,7 @@
     <link href="//cdn.bootcss.com/normalize/4.1.1/normalize.min.css" rel="stylesheet">
 
     <!-- local CSS -->
-    <link href="res/css/index.css" rel="stylesheet">
+    <link href="res/css/login.css" rel="stylesheet">
 
     <!-- ===========================  css end  ============================ -->
 
@@ -34,7 +34,7 @@
 
 <article ms-controller="article">
     <header ms-include-src="header"></header>
-    <main ms-include-src="main">
+    <main ms-include-src="login">
         <div class="loading">
             LOADING...
         </div>
@@ -49,7 +49,7 @@
 <!-- require的配置文件 -->
 <script src="config/config-require.js"></script>
 <script>
-    require(['app/main/js/main']);
+    require(['app/login/js/login']);
 </script>
 
 <!-- ===========================  js end ============================ -->

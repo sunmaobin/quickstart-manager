@@ -1,0 +1,28 @@
+/*
+H5全局
+================================*/
+
+@mixin transition($transition : .2s){
+  -webkit-transition: all $transition;
+  -moz-transition: all $transition;
+  transition: all $transition;
+}
+
+@mixin radius($radius : 4px){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/*
+全局常量
+================================*/
+$gap-20 : 20px;
+
+/*
+全局颜色
+================================*/
+
+$color-main : #333;
+$color-gray : #ccc;
+$color-gray-light : #f5f5f5;

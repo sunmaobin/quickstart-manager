@@ -1,0 +1,47 @@
+@import "define";
+
+/*
+全局防止越界
+================================*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font : 13px/20px "Microsoft Yahei","SimSun","Arial Narrow",serif;
+  color: $color-main;
+  line-height: 1.8;
+
+  @include transition();
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 41px;
+  line-height: 40px;
+  background-color: $color-gray-light;
+  border-top: 1px solid darken($color-gray-light,10%);
+}
+
+.loading{
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}

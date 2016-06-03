@@ -1,0 +1,20 @@
+@import "common";
+
+.login{
+  position: absolute;
+  width: 320px;
+  top: 50%;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: -102px;
+
+  padding: $gap-20*1.5;
+  border: 1px solid darken($color-gray-light,10%);
+  background-color: lighten($color-gray-light,3%);
+
+  @include radius();
+
+  .form-group{
+    margin-bottom: $gap-20;
+  }
+}
