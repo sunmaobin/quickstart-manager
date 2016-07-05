@@ -9,7 +9,9 @@
 /**
  * 执行avalon初始化扩展
  */
-require(['extend.avalon']);
+require(['extend.avalon'],function () {
+    
+});
 
 /**
  * 初始化主页内容

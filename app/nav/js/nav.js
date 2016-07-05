@@ -41,7 +41,7 @@ define(['config','ejs','bootstrap','bootbox','util.storage'], function (config,e
                     if(result){
                         //TODO:处理退出逻辑
                         //清空缓存并重定向到登录页
-                        localStorage.removeItem(config.keys.keyToken);
+                        cache.removeItem(config.keys.keyToken);
                         location.href = "./login.html";
                     }
                 }

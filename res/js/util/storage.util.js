@@ -13,13 +13,13 @@ define(['config'], function (config) {
 
     Storage.prototype = {
         setItem : function (key,obj) {
-            localStorage.setItem(key,obj);
+            store.set(key,obj);
         },
         getItem : function (key) {
-            return localStorage.getItem(key);
+            return store.get(key);
         },
         removeItem : function(key){
-            localStorage.removeItem(key);
+            store.remove(key);
         }
     };
 
