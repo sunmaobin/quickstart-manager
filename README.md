@@ -19,7 +19,7 @@ SPA - Single Page Application - 单页面应用
 
 ## 浏览器兼容
 
-* IE10+
+* IE8+
 * Chrome/Firefox/Safari
 
 ## 插件应用
